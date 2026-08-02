@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Georgia, serif;
+    background: #f8f5f0;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+h1 {
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+                url("https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=1400") center/cover no-repeat;
+    color: white;
+    text-align: center;
+    padding: 70px 20px;
+    font-size: 42px;
+}
+
+/* Content Sections */
+section {
+    width: 85%;
+    max-width: 1000px;
+    margin: 30px auto;
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+h2 {
+    color: #6F4E37;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #c8a96e;
+    padding-bottom: 5px;
+}
+
+p {
+    font-size: 16px;
+    color: #555;
+}
+
+ul {
+    margin-left: 20px;
+}
+
+li {
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+/* Awards */
+section ul li::marker {
+    color: #c8a96e;
+}
+
+/* Footer */
+footer {
+    background: #3b2a1a;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+}
+
+/* Hover Effect */
+section:hover {
+    transform: translateY(-5px);
+    transition: 0.3s;
+}
