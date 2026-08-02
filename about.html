@@ -1,69 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About - Brew Haven Coffee Shop</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About - Brew Haven Coffee Shop</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: Georgia, serif; color: #3b2a1a; background: #fdf6ec; }
+
+    /* Nav */
+    nav {
+      background: #3b2a1a;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    nav .logo { color: #f5e6c8; font-size: 1.4rem; font-weight: bold; }
+    nav ul { list-style: none; display: flex; gap: 2rem; }
+    nav ul a { color: #f5e6c8; text-decoration: none; font-size: 1rem; }
+    nav ul a:hover { color: #c8a96e; }
+
+    /* Page Header */
+    .page-header {
+      background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+                  url('https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?w=1400') center/cover no-repeat;
+      color: #fff;
+      text-align: center;
+      padding: 5rem 1rem;
+    }
+    .page-header h1 { font-size: 2.8rem; }
+
+    /* Main Content */
+    main { max-width: 860px; margin: 3rem auto; padding: 0 1.5rem; }
+
+    section { margin-bottom: 2.5rem; background: #fff; border-radius: 8px; padding: 2rem; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+    section h2 { font-size: 1.6rem; margin-bottom: 1rem; color: #3b2a1a; border-left: 4px solid #c8a96e; padding-left: 0.75rem; }
+    section p { line-height: 1.8; color: #5a3e28; }
+
+    /* Why Choose Us list */
+    #why-choose-us ul { padding-left: 1.2rem; }
+    #why-choose-us ul li { margin-bottom: 0.6rem; line-height: 1.7; color: #5a3e28; }
+
+    /* Opening Hours table */
+    table { width: 100%; border-collapse: collapse; margin-top: 0.5rem; }
+    th, td { padding: 0.75rem 1rem; text-align: left; border-bottom: 1px solid #f0e0c8; }
+    th { background: #3b2a1a; color: #f5e6c8; }
+    tr:hover td { background: #fdf0e0; }
+
+    /* Footer */
+    footer {
+      background: #3b2a1a;
+      color: #f5e6c8;
+      text-align: center;
+      padding: 1.5rem;
+      font-size: 0.9rem;
+    }
+  </style>
 </head>
 <body>
 
-    <header>
-        <h1>About Brew Haven Coffee Shop</h1>
-    </header>
+  <nav>
+    <div class="logo">☕ Brew Haven</div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
 
-    <main>
-        <section id="our-story">
-            <h2>Our Story</h2>
-            <p>
-                Brew Haven Coffee Shop was founded with a passion for serving
-                freshly brewed coffee in a warm and welcoming environment.
-                From carefully selected coffee beans to handcrafted beverages,
-                we strive to create memorable experiences for every customer.
-            </p>
-        </section>
+  <div class="page-header">
+    <h1>About Brew Haven Coffee Shop</h1>
+  </div>
 
-        <section id="our-mission">
-            <h2>Our Mission</h2>
-            <p>
-                Our mission is to bring people together through exceptional
-                coffee, delicious treats, and outstanding customer service while
-                supporting sustainable and ethical sourcing practices.
-            </p>
-        </section>
+  <main>
+    <section id="our-story">
+      <h2>Our Story</h2>
+      <p>
+        Brew Haven Coffee Shop was founded with a passion for serving
+        freshly brewed coffee in a warm and welcoming environment.
+        From carefully selected coffee beans to handcrafted beverages,
+        we strive to create memorable experiences for every customer.
+      </p>
+    </section>
 
-        <section id="why-choose-us">
-            <h2>Why Choose Us</h2>
-            <ul>
-                <li>Premium quality, freshly roasted coffee beans.</li>
-                <li>Friendly and welcoming atmosphere.</li>
-                <li>Skilled baristas crafting every cup with care.</li>
-                <li>Fresh pastries and snacks prepared daily.</li>
-                <li>Free Wi-Fi and comfortable seating for work or relaxation.</li>
-            </ul>
-        </section>
+    <section id="our-mission">
+      <h2>Our Mission</h2>
+      <p>
+        Our mission is to bring people together through exceptional
+        coffee, delicious treats, and outstanding customer service while
+        supporting sustainable and ethical sourcing practices.
+      </p>
+    </section>
 
-        <section id="opening-hours">
-            <h2>Opening Hours</h2>
-            <table border="1" cellpadding="8">
-                <tr>
-                    <th>Day</th>
-                    <th>Hours</th>
-                </tr>
-                <tr>
-                    <td>Monday - Friday</td>
-                    <td>7:00 AM - 9:00 PM</td>
-                </tr>
-                <tr>
-                    <td>Saturday</td>
-                    <td>8:00 AM - 10:00 PM</td>
-                </tr>
-                <tr>
-                    <td>Sunday</td>
-                    <td>8:00 AM - 8:00 PM</td>
-                </tr>
-            </table>
-        </section>
-    </main>
+    <section id="why-choose-us">
+      <h2>Why Choose Us</h2>
+      <ul>
+        <li>Premium quality, freshly roasted coffee beans.</li>
+        <li>Friendly and welcoming atmosphere.</li>
+        <li>Skilled baristas crafting every cup with care.</li>
+        <li>Fresh pastries and snacks prepared daily.</li>
+        <li>Free Wi-Fi and comfortable seating for work or relaxation.</li>
+      </ul>
+    </section>
+
+    <section id="opening-hours">
+      <h2>Opening Hours</h2>
+      <table>
+        <tr><th>Day</th><th>Hours</th></tr>
+        <tr><td>Monday - Friday</td><td>7:00 AM - 9:00 PM</td></tr>
+        <tr><td>Saturday</td><td>8:00 AM - 10:00 PM</td></tr>
+        <tr><td>Sunday</td><td>8:00 AM - 8:00 PM</td></tr>
+      </table>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Brew Haven Coffee Shop. All rights reserved.</p>
+  </footer>
 
 </body>
 </html>
